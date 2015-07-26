@@ -10,3 +10,6 @@ Step 1: Download and unzip the source data (https://d396qusza40orc.cloudfront.ne
 Step 2: Move the data into my R working directory. (D:\R)
 
 Step 3: Run run_analysis.R which is written in my R working directory.
+
+Step 4: Use data <- read.table("final_dataset_with_avg.txt") to read the data. 
+(Note: It is 180x68 because there are 30 subjects and 6 activities)
