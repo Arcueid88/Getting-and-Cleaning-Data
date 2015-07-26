@@ -19,12 +19,12 @@ The R script run_analysis.R in the repo cleans up the data in the following ways
 
 - Reads UCI HAR Dataset/activity_labels.txt, and applies descriptive activity names to name the activities in the data set:
 
-    walking
-    walkingupstairs
-    walkingdownstairs
-    sitting
-    standing
-    laying
+        walking
+        walkingupstairs
+        walkingdownstairs
+        sitting
+        standing
+        laying
 
 - The script labels the data set appropriately with descriptive names. 
     All feature names and activity names are converted to lower case, underscores and brackets () are removed. 
@@ -34,16 +34,16 @@ The R script run_analysis.R in the repo cleans up the data in the following ways
     It is a 10299x68 data frame. The first column contains subject IDs, the second column contains activity names. 
     The last 66 columns are measurements. Subject IDs are integers between 1 and 30 inclusive. 
 
-The names of the attributes are similar to:
+    The names of the attributes are similar to:
 
-    tbodyacc-mean-x 
-    tbodyacc-mean-y 
-    tbodyacc-mean-z 
-    tbodyacc-std-x 
-    tbodyacc-std-y 
-    tbodyacc-std-z 
-    tgravityacc-mean-x 
-    tgravityacc-mean-y
+        tbodyacc-mean-x 
+        tbodyacc-mean-y 
+        tbodyacc-mean-z 
+        tbodyacc-std-x 
+        tbodyacc-std-y 
+        tbodyacc-std-z 
+        tgravityacc-mean-x 
+        tgravityacc-mean-y
 
 - Finally, the script creates the 2nd, independent tidy data set with the average of each measurement for each activity and each subject. 
     The result is saved as final_dataset_with_avg.txt, a 180x68 data frame, with 30 subjects and 6 activities, 180 rows with averages.
