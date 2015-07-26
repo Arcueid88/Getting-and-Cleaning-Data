@@ -27,12 +27,12 @@ The R script run_analysis.R in the repo cleans up the data in the following ways
     laying
 
 - The script labels the data set appropriately with descriptive names. 
-All feature names and activity names are converted to lower case, underscores and brackets () are removed. 
-It merges the 10299x66 data frame containing features with 10299x1 data frames containing activity labels and subject IDs. 
-The result is saved as merged_cleaned_dataset.txt. 
+    All feature names and activity names are converted to lower case, underscores and brackets () are removed. 
+    It merges the 10299x66 data frame containing features with 10299x1 data frames containing activity labels and subject IDs. 
+    The result is saved as merged_cleaned_dataset.txt. 
 
-It is a 10299x68 data frame. The first column contains subject IDs, the second column contains activity names. 
-The last 66 columns are measurements. Subject IDs are integers between 1 and 30 inclusive. 
+    It is a 10299x68 data frame. The first column contains subject IDs, the second column contains activity names. 
+    The last 66 columns are measurements. Subject IDs are integers between 1 and 30 inclusive. 
 
 The names of the attributes are similar to:
 
@@ -46,4 +46,4 @@ The names of the attributes are similar to:
     tgravityacc-mean-y
 
 - Finally, the script creates the 2nd, independent tidy data set with the average of each measurement for each activity and each subject. 
-  The result is saved as final_dataset_with_avg.txt, a 180x68 data frame, with 30 subjects and 6 activities, 180 rows with averages.
+    The result is saved as final_dataset_with_avg.txt, a 180x68 data frame, with 30 subjects and 6 activities, 180 rows with averages.
