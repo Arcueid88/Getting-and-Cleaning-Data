@@ -5,7 +5,7 @@ Course Project CodeBook
 
 The R script run_analysis.R in the repo cleans up the data in the following ways:
 
-# Merges the training and test sets to create one data set: 
+- Merges the training and test sets to create one data set: 
     UCI HAR Dataset/train/X_train.txt with UCI HAR Dataset/test/X_test.txt.
     The result is a 10299x561 data frame. ("Number of Instances: 10299" and "Number of Attributes: 561").
     UCI HAR Dataset/train/subject_train.txt with UCI HAR Dataset/test/subject_test.txt.
@@ -13,11 +13,11 @@ The R script run_analysis.R in the repo cleans up the data in the following ways
     UCI HAR Dataset/train/y_train.txt with UCI HAR Dataset/test/y_test.txt.
     The result is a 10299x1 data frame with activity IDs.
 
-# Reads UCI HAR Dataset/features.txt and extracts the measurements on the mean and standard deviation for each measurement. 
+- Reads UCI HAR Dataset/features.txt and extracts the measurements on the mean and standard deviation for each measurement. 
     The result is a 10299x66 data frame, as only 66 out of 561 attributes are measurements on the mean and standard deviation. 
     All measurements appear to be floating point numbers in the range (-1, 1).
 
-# Reads UCI HAR Dataset/activity_labels.txt, and applies descriptive activity names to name the activities in the data set:
+- Reads UCI HAR Dataset/activity_labels.txt, and applies descriptive activity names to name the activities in the data set:
 
 walking
 walkingupstairs
@@ -26,7 +26,7 @@ sitting
 standing
 laying
 
-# The script labels the data set appropriately with descriptive names. 
+- The script labels the data set appropriately with descriptive names. 
 All feature names and activity names are converted to lower case, underscores and brackets () are removed. 
 It merges the 10299x66 data frame containing features with 10299x1 data frames containing activity labels and subject IDs. 
 The result is saved as merged_cleaned_dataset.txt. 
@@ -45,5 +45,5 @@ tbodyacc-std-z
 tgravityacc-mean-x 
 tgravityacc-mean-y
 
-# Finally, the script creates the 2nd, independent tidy data set with the average of each measurement for each activity and each subject. 
+- Finally, the script creates the 2nd, independent tidy data set with the average of each measurement for each activity and each subject. 
   The result is saved as final_dataset_with_avg.txt, a 180x68 data frame, with 30 subjects and 6 activities, 180 rows with averages.
